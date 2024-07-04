@@ -8,7 +8,7 @@ import document3 from '../../assets/document3.png';
 import { Line } from '../../core/Line';
 import { Typography } from '../../core/Typography';
 
-import { ImageContainer, StyledDocuments, StyledModal } from './Documents.style';
+import { ImageContainer, ImagesContainer, StyledDocuments, StyledModal } from './Documents.style';
 
 export const Documents = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,7 +28,7 @@ export const Documents = () => {
         <Line isLight width="90%" />
         <Typography variant="h1">Подтверждающие документы</Typography>
 
-        <div>
+        <ImagesContainer>
           <ImageContainer
             onClick={() => {
               setCurrentDocument(1);
@@ -53,7 +53,7 @@ export const Documents = () => {
           >
             <img src={document3} />
           </ImageContainer>
-        </div>
+        </ImagesContainer>
         <StyledModal title=" " open={isModalOpen} onCancel={handleCancel} footer={null}>
           <div>
             {currentDocument === 1 && <img src={document1} style={{ minWidth: '60vw' }} />}

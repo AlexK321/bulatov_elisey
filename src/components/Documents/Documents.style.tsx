@@ -4,8 +4,8 @@ import styled from 'styled-components';
 export const StyledDocuments = styled.div`
   display: flex;
   justify-content: space-around;
-  padding: 30px 60px;
   align-items: center;
+  padding: 30px;
   background: #b29ea0;
   color: white;
 
@@ -14,6 +14,12 @@ export const StyledDocuments = styled.div`
     height: 25px;
     cursor: pointer;
   }
+`;
+export const ImagesContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ImageContainer = styled.div`
@@ -34,6 +40,7 @@ export const ImageContainer = styled.div`
   @media (max-width: 450px) {
     width: 250px;
     height: 250px;
+    margin: 16px 0;
   }
 `;
 

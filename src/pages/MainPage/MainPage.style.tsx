@@ -7,6 +7,7 @@ export const MainWrapper = styled.div`
   background: #f7f4ed;
   width: 100%;
   min-height: 100vh;
+  max-width: 100vw;
 `;
 
 export const MainContent = styled.div`
@@ -19,7 +20,7 @@ export const MainContent = styled.div`
   border-radius: 10px;
 
   @media (max-width: 1220px) {
-    width: 100vw;
+    width: 100%;
     border: 0px solid #c99fb4;
   }
 `;
