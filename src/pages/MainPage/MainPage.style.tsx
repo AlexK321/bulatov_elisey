@@ -1,13 +1,25 @@
 import styled from 'styled-components';
 
-export const MainContainer = styled.div`
+export const MainWrapper = styled.div`
   margin: 0 auto;
-  height: 100vh;
-  padding: 32px;
-  max-width: 1200px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  background: ${props => props.theme.colors.bg};
-  border: 2px solid #8b4513;
+  background: #f7f4ed;
+  width: 100%;
+  min-height: 100vh;
+`;
+
+export const MainContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  border: 2px solid #c99fb4;
+  border-radius: 10px;
+
+  @media (max-width: 1220px) {
+    width: 100vw;
+    border: 0px solid #c99fb4;
+  }
 `;
