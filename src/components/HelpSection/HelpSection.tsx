@@ -8,6 +8,7 @@ const ACCOUNTS = {
   byn: 'BY37 AKBB 3134 0000 0246 0007 0000',
   eur: 'BY37 AKBB 3134 0000 0246 0007 0000',
   dol: 'BY23 AKBB 3134 1000 0120 3007 0000',
+  card: '9112 3801 2731 7677',
 };
 
 export const HelpSection = () => {
@@ -48,6 +49,14 @@ export const HelpSection = () => {
         <Typography variant="text">{ACCOUNTS.dol}</Typography>
         <img src={copyIcon} onClick={() => copyTextToClipboard(ACCOUNTS.dol)}></img>
       </Account>
+      <br />
+      <Typography variant="h2">Перевод на карту из РФ:</Typography>
+      <Account>
+        <Typography variant="text">Номер карты: {ACCOUNTS.card}</Typography>
+        <img src={copyIcon} onClick={() => copyTextToClipboard(ACCOUNTS.card)}></img>
+      </Account>
+      <Typography variant="text">Срок действия: 07/28</Typography>
+      <Typography variant="text">Получатель: Aliaksandra Bulatava</Typography>
       <Line width="60%" style={{ marginTop: '30px' }} />
     </StyledHelpSection>
   );

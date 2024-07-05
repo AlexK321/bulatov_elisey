@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import { Button, Modal } from 'antd';
 
-import copyIcon from '../../assets/copy_icon.png';
 import document1 from '../../assets/document1.png';
 import document2 from '../../assets/document2.png';
 import document3 from '../../assets/document3.png';
@@ -25,7 +23,7 @@ export const Documents = () => {
   return (
     <StyledDocuments>
       <div>
-        <Line isLight width="90%" />
+        <Line isLight />
         <Typography variant="h1">Подтверждающие документы</Typography>
 
         <ImagesContainer>
@@ -61,6 +59,7 @@ export const Documents = () => {
             {currentDocument === 3 && <img src={document3} style={{ minWidth: '60vw' }} />}
           </div>
         </StyledModal>
+        <Line isLight width="60%" style={{ marginTop: '20px' }} />
       </div>
     </StyledDocuments>
   );
